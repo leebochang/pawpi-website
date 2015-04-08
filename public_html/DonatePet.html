@@ -16,8 +16,9 @@ and open the template in the editor.
         <link type="text/css" rel="stylesheet" href="./css/bootstrap-theme.css">
     </head>
     <body>
+    <div class="container-fluid" id="wrap">
         <!-- Disclaimer -->
-        <div class="container-fluid" align="center" style="background-color: black;" > 
+        <div class="container-fluid" style="background-color: black; text-align: center;" > 
             <p style="color: white;"> THIS IS NOT A REAL WEBSITE THIS IS A PROJECT FOR CS 648</p>
         </div>
 
@@ -50,8 +51,8 @@ and open the template in the editor.
         <div class="container-fluid">
         <div class="full-width-tabs">
             <ul class="nav nav-tabs">
-            <li class="take-all-space-you-can"><a href="./index.html">Home</a></li>
-            <li class = "active take-all-space-you-can"><a href="./DonatePet.html">Donate A Pet</a></li> 
+            <li class="active take-all-space-you-can"><a href="./index.html">Home</a></li>
+            <li class = "take-all-space-you-can"><a href="./DonatePet.html">Donate A Pet</a></li> 
             <li class="dropdown take-all-space-you-can">
             <a class="dropdown-toggle " data-toggle="dropdown" href="#">My Account<span class="caret"></span></a>
             <ul class="dropdown-menu take-all-space-you-can">
@@ -68,7 +69,7 @@ and open the template in the editor.
         </nav> 
         <!-- end of navbar divider -->
 
-                
+    </div>
         <!-- End of homepage  Everything below are modals -->
                 <!-- Register Modal -->
         <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -79,6 +80,7 @@ and open the template in the editor.
             <h4 class="modal-title" style="text-align:center;">REGISTRATION</h4>
         </div>
         <div class="modal-body form-horizontal" style="text-align:center;">
+        <div class="container-fluid" style="text-align: center">
             <form class=" " >
             <div class="row">
                 <label class="">Username: </label>
@@ -107,6 +109,7 @@ and open the template in the editor.
             </div>
             </form>
         </div>
+        </div>
         <div class="modal-footer">
         <button type="button" class="btn btn-block" data-dismiss="modal">REGISTER</button>
         </div>
@@ -123,6 +126,7 @@ and open the template in the editor.
             <h4 class="modal-title" style="text-align:center;">LOGIN</h4>
         </div>
         <div class="modal-body form-horizontal" style="text-align:center;">
+        <div class="container-fluid">
             <form class=" " >
             <div class="row">
             <label class="">Username: </label>
@@ -133,6 +137,7 @@ and open the template in the editor.
             <input type="password"/>
             </div>
             </form>
+        </div>
         </div>
         <div class="modal-footer">
         <button type="button" class="btn btn-block" data-dismiss="modal">LOGIN</button>
