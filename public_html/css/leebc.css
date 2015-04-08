@@ -1,0 +1,303 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 3, 2015, 11:21:31 AM
+    Author     : priel_000
+*/
+.pawpi-logo{
+    color: black;
+    font-family: serif;
+    font-size: 24px;
+    position: relative;
+    top:0;
+    left:0;
+}
+
+.login{
+    color: blue;
+    position: absolute;
+    top:10px;
+    right:0px;
+    min-width: 0px;
+}
+.middle{
+    position: absolute;
+    text-align: center;
+    top:10px;
+}
+.login-with{
+    color: grey;
+    position: absolute;
+    top:50px;
+    right:20px;
+    min-width:0px;
+    text-align: right;
+    font-size: 14px;
+}
+.center-modal-form{
+    margin:0 auto; 
+    width:50%;
+ 
+}
+.form-horizontal .my-control-label {
+  width:50%;
+  position: relative;
+  margin: 0 30% 0 4%;
+  text-align: center;
+}
+
+.front-page-img{
+    display:block;
+    margin:auto;
+    text-align: center;
+    font-size: 36px;
+    position: relative;
+    border-style: solid;
+    border-width: 0px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    color:white;
+}
+.row-border{
+    border-style: ridge;
+    border-color: black;
+    border-width: 1px;
+    background-color:white;
+}
+
+.column-left{ 
+    float: left; 
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+.column-right{ 
+    float: right; 
+    display: inline-block;
+    width: 33%; 
+    vertical-align: top;
+}
+.column-center{ 
+    display: inline-block; 
+    width: 33%; 
+    vertical-align: top;
+}
+.column-search{
+    padding-top: 30px;
+    vertical-align: top;
+    width: 100%;
+    display: inline-block;
+}
+
+#search-size{
+}
+.horizontal-divider{
+    height: 10px;
+    width:100%;
+    display:block; /* for use on default inline elements like span */
+    
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.full-width-tabs > ul.nav.nav-tabs {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.full-width-tabs > ul.nav.nav-tabs > li {
+    float: none;
+    display: table-cell;
+}
+.full-width-tabs > ul.nav.nav-tabs > li > a {
+    text-align: center;
+}
+.take-all-space-you-can{
+    width:100%;
+}
+.btn-separator:after {
+    content: ' ';
+    display: block;
+    float: right;
+    background: #ADADAD;
+    margin: 0 10px;
+    height: 34px;
+    width: 1px;
+}
+.check-reminder{
+    color: black;
+}
+.check-reminder > label{
+    display: block;
+    padding-left: 145px; //  15px
+    text-indent: -15px; // -15px
+}
+.check-reminder > label > input{
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+.panel-heading a:after {
+    font-family:'Glyphicons Halflings';
+    content:"\e114";
+    float: right;
+    color: grey;
+}
+.panel-heading a.collapsed:after {
+    content:"\e080";
+}
+.form-center{
+    margin:0 auto;
+    width: 80%;
+}
+
+#FB-Button{
+    background:url(../img/facebook.jpg) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:25px;
+    height:25px;
+    background-size: 100%;
+}
+#TW-Button{
+    background:url(../img/twitter.jpg) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:25px;
+    height:25px;
+    background-size: 100%;
+}
+#GP-Button{
+    background:url(../img/google.jpg);
+    background-repeat: no-repeat;
+    border:none;
+    cursor:pointer;
+    width:25px;
+    height:25px;
+    background-size: 100%;
+}
+
+#myform {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mylabel, #myinput {
+    /* in order to define widths */
+    display: inline-block;
+}
+
+.mylabel {
+    width: 30%;
+    /* positions the label text beside the input */
+    text-align: right;
+}
+
+.mylabel + #myinput {
+    width: 30%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+    margin: 0 30% 0 4%;
+}
+
+/* only the submit button is matched by this selector,
+   but to be sure you could use an id or class for that button */
+#myinput + #myinput {
+    float: right;
+}
+
+#expand-link{
+    text-align:center;
+    margin: 0 auto;
+}
+#search_form {
+    background: #2d93cc; 
+    position: relative; 
+    padding: 10px 190px 10px 10px; 
+    border: 3px solid #ffffff; 
+    -webkit-border-radius: 10px; 
+    -moz-border-radius: 10px; 
+    -o-border-radius: 10px; 
+    border-radius: 10px; 
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5), inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5); 
+    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5), inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5); 
+    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5), inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+#search_text {
+    font-size: 20px; color: #5e5e5e; float: left; 
+    width: 100%; height: 30px; margin: 0; 
+    padding: 5px 10px 5px 10px; border: none; 
+    webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -o-border-radius: 5px; 
+    border-radius: 5px; 
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5); 
+    -moz-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5); 
+    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+#search_text:focus {
+    background: #ecf5fd;
+}
+
+#search_button {
+    background: #da3a4a; 
+    background: -moz-linear-gradient(top, #da3a4a 0%, #bd2b39 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#da3a4a), color-stop(100%,#bd2b39)); 
+    background: -webkit-linear-gradient(top, #da3a4a 0%,#bd2b39 100%); 
+    background: -o-linear-gradient(top, #da3a4a 0%,#bd2b39 100%); 
+    background: -ms-linear-gradient(top, #da3a4a 0%,#bd2b39 100%); 
+    background: linear-gradient(top, #da3a4a 0%,#bd2b39 100%); 
+    font-size: 20px; line-height: 40px; color: #ffffff; 
+    text-shadow: 0px 1px 1px #641010; float: right; 
+    width: 150px; 
+    height: 40px; 
+    margin: 0 -180px 0 0; 
+    padding: 0; 
+    border: 1px solid #e03c4c; 
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -o-border-radius: 5px; 
+    border-radius: 5px; 
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); 
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);}
+
+#search_button:hover {
+    background: #e03c4c; cursor: pointer;
+}
+
+/***Clear floats***/
+.clearfix:before, .clearfix:after {
+    content: ""; display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+/***Form adjustments for the small screen***/
+@media screen and (max-width: 799px), screen and (max-width: 768px) and (orientation: portrait) {
+
+	body {padding: 20px;}
+
+	#search_form {padding: 10px 120px 10px 10px;}
+
+	#search_text {font-size: 16px; height: 20px;}
+	
+	#search_button {font-size: 16px; line-height: 30px; width: 80px; height: 30px; margin: 0 -110px 0 0;}
+
+}
