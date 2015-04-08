@@ -37,29 +37,35 @@ and open the template in the editor.
     text-align: right;
     font-size: 14px;
 }
-.center-modal-form{
-    margin:0 auto; 
-    width:50%;
- 
+.endangered-gallery{
+    border-style: groove;
+    border-color: black;
+    border-width: 3px;
+    background-color: white;
+    position: relative;
+    margin:0 auto;
+    text-align:center;
 }
-.form-horizontal .my-control-label {
-  width:50%;
-  position: relative;
-  margin: 0 30% 0 4%;
-  text-align: center;
+.img-container{
+    position:relative;
+    display:inline-block;
+    text-align:center;
+    height:100%;
+    width:33%;
+}
+.button-overlay{
+    position:absolute;
+    top:10px;
+    right:80px;
+    width:100px;
+    height:100px;
 }
 
-.front-page-img{
-    display:block;
-    margin:auto;
-    text-align: center;
-    font-size: 36px;
-    position: relative;
-    border-style: solid;
-    border-width: 0px;
-    padding-top: 20px;
-    padding-bottom: 100px;
-    color:white;
+.button-overlay > span:hover{
+  content: "\e005";
+  font-size:50px;
+  opacity:100%;
+  color:red;
 }
 .row-border{
     border-style: ridge;
@@ -67,43 +73,6 @@ and open the template in the editor.
     border-width: 1px;
     background-color:white;
 }
-
-.column-left{ 
-    float: left; 
-    display: inline-block;
-    width: 33%;
-    vertical-align: top;
-}
-.column-right{ 
-    float: right; 
-    display: inline-block;
-    width: 33%; 
-    vertical-align: top;
-}
-.column-center{ 
-    display: inline-block; 
-    width: 33%; 
-    vertical-align: top;
-}
-.column-search{
-    padding-top: 30px;
-    vertical-align: top;
-    width: 100%;
-    display: inline-block;
-}
-
-#search-size{
-}
-.horizontal-divider{
-    height: 10px;
-    width:100%;
-    display:block; /* for use on default inline elements like span */
-    
-    margin: 9px 0;
-    overflow: hidden;
-    background-color: black;
-}
-
 .full-width-tabs > ul.nav.nav-tabs {
     display: table;
     width: 100%;
@@ -155,11 +124,6 @@ and open the template in the editor.
 .panel-heading a.collapsed:after {
     content:"\e080";
 }
-.form-center{
-    margin:0 auto;
-    width: 80%;
-}
-
 #FB-Button{
     background:url(../img/facebook.jpg) no-repeat;
     cursor:pointer;
@@ -186,39 +150,6 @@ and open the template in the editor.
     background-size: 100%;
 }
 
-#myform {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.mylabel, #myinput {
-    /* in order to define widths */
-    display: inline-block;
-}
-
-.mylabel {
-    width: 30%;
-    /* positions the label text beside the input */
-    text-align: right;
-}
-
-.mylabel + #myinput {
-    width: 30%;
-    /* large margin-right to force the next element to the new-line
-       and margin-left to create a gutter between the label and input */
-    margin: 0 30% 0 4%;
-}
-
-/* only the submit button is matched by this selector,
-   but to be sure you could use an id or class for that button */
-#myinput + #myinput {
-    float: right;
-}
-
-#expand-link{
-    text-align:center;
-    margin: 0 auto;
-}
 #search_form {
     background: #2d93cc; 
     position: relative; 
