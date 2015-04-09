@@ -67,6 +67,11 @@ and open the template in the editor.
     height:100%;
     width:33%;
 }
+.img-listings{
+    position:relative;
+    display:inline-block;
+    float: left;
+}
 .button-overlay{
     position:absolute;
     top:10px;
@@ -119,6 +124,16 @@ and open the template in the editor.
     visibility:hidden;
     margin-bottom:-1px;
 }
+
+.border{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+.padding-vertical{
+    padding-bottom:15px;
+    padding-top:15px;
+}
 .full-width-tabs > ul.nav.nav-tabs {
     display: table;
     width: 100%;
@@ -134,6 +149,24 @@ and open the template in the editor.
 .take-all-space-you-can{
     width:100%;
 }
+.column-height{
+    height: 150px;
+}
+.listing-name{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding-top: 50%;
+    padding-left: 25%;
+}
+.listing-options{
+    text-align: right;
+    font-size:48px;
+    margin:0 auto;
+    position: relative;
+    padding-top: 10%;
+    float: right;
+}
 .btn-separator:after {
     content: ' ';
     display: block;
@@ -143,6 +176,15 @@ and open the template in the editor.
     height: 34px;
     width: 1px;
 }
+.favorite-options-separator:after{
+    content: ' ';
+    display: inline-block;
+    background: #ADADAD;
+    margin: 0 10px;
+    height: 64px;
+    width: 3px;
+}
+
 .col-md-2 > .btn-separator:after {
     content: ' ';
     display: inline-block;
