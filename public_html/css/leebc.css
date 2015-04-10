@@ -151,6 +151,8 @@ and open the template in the editor.
 }
 .column-height{
     height: 150px;
+    min-height: 100%;
+    
 }
 .listing-name{
     text-align: center;
