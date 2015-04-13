@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+<title>TODO supply a title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="./js/jquery/jquery.js"></script>
+<script src="./js/bootstrap.js"></script>
+<link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="./css/leebc.css">
+<link type="text/css" rel="stylesheet" href="./css/bootstrap-theme.css">
+</head>
+<body>
+<!-- website wrapper -->
+<div class="container-fluid" id="wrap" style="min-width: 1024px;">
+<!-- Disclaimer -->
+<div class="container-fluid" style="background-color: black; text-align: center;" > 
+    <p style="color: white;"> THIS IS NOT A REAL WEBSITE THIS IS A PROJECT FOR CS 648</p>
+</div>
+<!-- logo divider -->
+<div class = "container-fluid pawpi-logo">
+    <img src="./img/paw_print.jpeg" alt="Paw Print" style="width:150px;height:75px">
+        www.pawpi.com
+    <div class="container middle"></div>
+    <div class="login container">
+        <button type="button" class="btn pull-right btn-link" data-toggle="modal" data-target="#registerModal">
+            register
+        </button>
+        <span class="btn-separator"></span>
+        <button type="button" class="btn pull-right btn-link" data-toggle="modal" data-target="#loginModal">
+            login
+        </button>
+    </div>
+    <div class="container login-with">login with:
+        <input type="submit" id="FB-Button" name="submit" value="">
+        <input type="submit" id="TW-Button" name="submit" value="">
+        <input type="submit" id="GP-Button" name="submit" value="">
+    </div>
+</div>
+<!-- end of logo divider -->
+<div><br></div>
+<!-- navbar divider -->
+<nav class="navbar navbar-default" role="navigation">
+<div class="container-fluid">
+    <div class="full-width-tabs">
+        <ul class="nav nav-tabs">
+            <li class="active take-all-space-you-can"><a href="./index.html">Home</a></li>
+            <li class = "take-all-space-you-can"><a href="./DonatePet.html">Donate A Pet</a></li> 
+            <li class="dropdown take-all-space-you-can">
+            <a class="dropdown-toggle " data-toggle="dropdown" href="#">My Account<span class="caret"></span></a>
+            <ul class="dropdown-menu take-all-space-you-can">
+                <li><a href="#">My Inbox</a></li>
+                <li><a href="./MyListings.html">My Listings</a></li>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">My Favorites</a></li> 
+            </ul>
+            </li>
+            <li class = "take-all-space-you-can"><a href="#">About Us</a></li> 
+        </ul>
+    </div>
+</div>
+</nav> 
+<!-- end of navbar divider -->  
+<!-- my listings view -->
+<div class="row"><div class="row-border"></div></div>
+<div class="container" style="width:95%;">
+    <h3 style="text-align: center;text-decoration: underline;">My Listings</h3>
+    <div class="row"></div>
+    <div class="container" style="width:95%; position: absolute;">
+        <div class="row border column-height" style="width:90%; position:absolute; ">
+            <div class="col-md-2 column-height border" style="float: left;">
+                <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a> 
+            </div>
+            <div class="col-md-2  column-height border">
+                <h3 class="listing-name">Fredo</h3>
+            </div>
+            <div class="col-md-8 column-height border">
+                <a href="#and" class="listing-options"> Delete </a>
+                <span class="favorite-options-separator listing-options"></span>
+                <a href="#and" class="listing-options"> Adopted! </a>
+                <span class="favorite-options-separator listing-options"></span>
+                <a href="#and" class="listing-options"> Edit </a>
+            </div>
+        </div>
+        <div class="row border column-height" style="width:90%; position:absolute; ">
+            <div class="col-md-2 column-height border" style="float: left;">
+                <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a> 
+            </div>
+            <div class="col-md-2  column-height border">
+                <h3 class="listing-name">Fredo</h3>
+            </div>
+            <div class="col-md-8 column-height border">
+                <a href="#and" class="listing-options"> Delete </a>
+                <span class="favorite-options-separator listing-options"></span>
+                <a href="#and" class="listing-options"> Adopted! </a>
+                <span class="favorite-options-separator listing-options"></span>
+                <a href="#and" class="listing-options"> Edit </a>
+            </div>
+        </div>
+        <div class="row border column-height" style="width:90%; position:absolute; ">
+            <div class="col-md-2 column-height border" style="float: left;">
+                <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a> 
+            </div>
+            <div class="col-md-2  column-height border">
+                <h3 class="listing-name">Fredo</h3>
+            </div>
+            <div class="col-md-8 column-height border">
+                <a href="#and" class="listing-options"> Delete </a>
+                <span class="favorite-options-separator listing-options"></span>
+                <a href="#and" class="listing-options"> Adopted! </a>
+                <span class="favorite-options-separator listing-options"></span>
+                <a href="#and" class="listing-options"> Edit </a>
+            </div>
+        </div>
+        <div class="row border column-height" style="width:90%; position:absolute; ">
+            <div class="col-md-2 column-height border" style="float: left;">
+                <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a> 
+            </div>
+            <div class="col-md-2  column-height border">
+                <h3 class="listing-name">Fredo</h3>
+            </div>
+            <div class="col-md-8 column-height border">
+                <a href="#and" class="listing-options"> Delete </a>
+                <span class="favorite-options-separator listing-options"></span>
+                <a href="#and" class="listing-options"> Adopted! </a>
+                <span class="favorite-options-separator listing-options"></span>
+                <a href="#and" class="listing-options"> Edit </a>
+            </div>
+        </div>
+        <div class="row border column-height" style="width:90%; position:absolute; ">
+            <div class="col-md-2 column-height border" style="float: left;">
+                <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a> 
+            </div>
+            <div class="col-md-2  column-height border">
+                <h3 class="listing-name">Fredo</h3>
+            </div>
+            <div class="col-md-8 column-height border">
+                <a href="#and" class="listing-options"> Delete </a>
+                <span class="favorite-options-separator listing-options"></span>
+                <a href="#and" class="listing-options"> Adopted! </a>
+                <span class="favorite-options-separator listing-options"></span>
+                <a href="#and" class="listing-options"> Edit </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of my listings --> 
+</div>
+<!-- End of homepage  Everything below are modals -->
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" style="text-align:center;">REGISTRATION</h4>
+    </div>
+    <div class="modal-body form-horizontal" style="text-align:center;">
+    <div class="container" style="text-align: center">
+        <form class=" " >
+            <div class="row">
+                <label class="">Username: </label>
+                <input type="text"/>
+            </div>
+            <div class="row">
+                <label class="" style="padding-left:30px;">Email:</label>
+                <input type="text"/>
+            </div>
+            <div class="row">
+                <label class="" style="padding-left:1px"> Password: </label>
+                <input type="password"/>
+            </div>
+            <div class="row">
+                <button type = "button" class="btn-link" id="toggleme">registering for shelter? click here</button>
+            <div id="viewdetails" style="display:none;">
+            <div class="row">
+                <label class="" style="padding-left:30px;">Email:</label>
+                <input type="text"/>
+            </div>
+            <div class="row">
+                <label class="" style="padding-left:1px"> Password: </label>
+                <input type="password"/>
+            </div>
+            </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-block" data-dismiss="modal">REGISTER</button>
+    </div>
+</div>
+</div>
+</div>
+<!-- End of Register Modal -->
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" style="text-align:center;">LOGIN</h4>
+    </div>
+    <div class="modal-body form-horizontal" style="text-align:center;">
+    <div class="container">
+        <form class=" " >
+        <div class="row">
+            <label class="">Username: </label>
+            <input type="text"/>
+        </div>
+        <div class="row">
+            <label class="" style="padding-left:1px"> Password: </label>
+            <input type="password"/>
+        </div>
+        </form>
+    </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-block" data-dismiss="modal">LOGIN</button>
+    </div>
+</div>
+</div>
+</div>        
+<!-- End of Login Modal -->
+<script>
+$(document).ready(function(){
+    $("#toggleme").click(function(){
+        $("#viewdetails").toggle();
+    });
+});
+</script>
+        
+    </body> 
+</html>
+
