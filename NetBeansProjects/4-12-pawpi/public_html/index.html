@@ -17,7 +17,7 @@ and open the template in the editor.
 </head>
 <body>
 <!-- website wrapper -->
-<div class="container-fluid" id="wrap" style="">
+<div class="container-fluid" id="wrap" style="min-width: 1024px;">
 <!-- Disclaimer -->
 <div class="container-fluid" style="background-color: black; text-align: center;" > 
     <p style="color: white;"> THIS IS NOT A REAL WEBSITE THIS IS A PROJECT FOR CS 648</p>
@@ -117,12 +117,15 @@ and open the template in the editor.
 <div class="container-fluid" style="background-color:black;">
     <div class="row-border"></div>
 </div>
+<div class="minwidth border" style="display:inline-block; position:absolute;">
 <!-- container for filter section-->
-<div class="col-md-2" style="height: 100%; ">
+<div class="col-xs-2" style= "">
 <!--Sidebar content-->
-    <div class="container border" style="position:relative; max-width: 70%; min-height: 500px; " >
+    <div class="container border" style="position:relative; min-width: 70%; max-width: 70%; min-height: 500px; " >
         <div class="row">
+            <div class="filter-first">
             <a href="#add" class="filter-by-type" id="animalFilter" onclick="toggleThis('#animalTypes')"> Animal</a>
+            </div>
             <div class="collapse" id = "animalTypes">
             <div class="filter-second">
                 <div class="row"><a>Dog</a></div>
@@ -132,7 +135,9 @@ and open the template in the editor.
             </div>
         </div>
         <div class="row">
+            <div class="filter-first">
             <a href="#add" class="filter-by-type" id="genderFilter" onclick="toggleThis('#genderTypes')"> Gender</a>
+            </div>
             <div class="collapse" id = "genderTypes">
             <div class="filter-second">
                 <div class="row"><a>Male</a></div>
@@ -141,7 +146,9 @@ and open the template in the editor.
             </div>
         </div>
         <div class="row">
+            <div class="filter-first">
             <a href="#add" class="filter-by-type" id="ageFilter" onclick="toggleThis('#ageTypes')"> Age</a>
+            </div>
             <div class="collapse" id = "ageTypes">
             <div class="filter-second">
                 <div class="row"><a>0-1 Years</a></div>
@@ -153,7 +160,9 @@ and open the template in the editor.
             </div>
         </div>
         <div class="row">
+            <div class="filter-first">
             <a href="#add" class="filter-by-type" id="sizeFilter" onclick="toggleThis('#sizeTypes')"> Size</a>
+            </div>
             <div class="collapse" id = "sizeTypes">
             <div class="filter-second">
                 <div class="row"><a>x-small</a></div>
@@ -165,7 +174,9 @@ and open the template in the editor.
             </div>
         </div>
         <div class="row">
+            <div class="filter-first">
             <a href="#add" class="filter-by-type" id="locationFilter" onclick="toggleThis('#locationTypes')"> Location</a>
+            </div>
             <div class="collapse" id = "locationTypes">
             <div class="filter-second">
                 <div class="row"><a>within 10 Miles</a></div>
@@ -177,7 +188,9 @@ and open the template in the editor.
             </div>
         </div>
         <div class="row">
-            <a href="#add" class="filter-by-type" id="donorFilter" onclick="toggleThis('#donorTypes')"> Donor Type</a>
+            <div class="filter-first">
+            <a href="#add" class="filter-by-type" id="donorFilter" onclick="toggleThis('#donorTypes')"> Donor</a>
+            </div>
             <div class="collapse" id = "donorTypes">
             <div class="filter-second">
                 <div class="row"><a>Shelter</a></div>
@@ -189,8 +202,8 @@ and open the template in the editor.
 </div>                
 <!-- end of column for filters -->     
 <!-- column for image gallery -->
-<div class="col-md-10 " style="">
-    <div class="container border" style=" position:relative; min-width: 90%; max-width:100%;">
+<div class="col-xs-10 ">
+    <div class="container border" style=" position:relative; max-width:100%;">
         <div class="row">
             <h1 style="text-align: center;"> Pets Available For Adoption</h1>
         </div>
@@ -261,6 +274,8 @@ and open the template in the editor.
         </div>
         </div>
     </div>
+</div>
+
 </div>
         
 </div>

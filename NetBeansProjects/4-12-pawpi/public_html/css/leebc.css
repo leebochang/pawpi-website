@@ -7,6 +7,25 @@ and open the template in the editor.
     Created on : Apr 3, 2015, 11:21:31 AM
     Author     : priel_000
 */
+@media all and (min-width: 500px)  {  body  { font-size:1.0em;  } }
+@media all and (min-width: 600px)  {  body  { font-size:1.2em;  } }
+@media all and (min-width: 700px)  {  body  { font-size:1.4em;  } }
+@media all and (min-width: 800px)  {  body  { font-size:1.6em;  } }
+@media all and (min-width: 900px)  {  body  { font-size:1.8em;  } }
+@media all and (min-width: 1000px) {  body  { font-size:2.0em;  } }
+@media all and (min-width: 1100px) {  body  { font-size:2.2em;  } }
+@media all and (min-width: 1200px) {  body  { font-size:2.4em;  } }
+
+@media all and (min-width: 50px)   {  .filter-first > a { font-size:0.1em;  } }
+@media all and (min-width: 100px)  {  .filter-first > a { font-size:0.2em;  } }
+@media all and (min-width: 200px)  {  .filter-first > a { font-size:0.4em;  } }
+@media all and (min-width: 300px)  {  .filter-first > a { font-size:0.6em;  } }
+@media all and (min-width: 400px)  {  .filter-first > a { font-size:0.8em;  } }
+@media all and (min-width: 500px)  {  .filter-first > a { font-size:1.0em;  } }
+@media all and (min-width: 600px)  {  .filter-first > a { font-size:1.2em;  } }
+@media all and (min-width: 700px)  {  .filter-first > a { font-size:1.3em;  } }
+@media all and (min-width: 800px)  {  .filter-first > a { font-size:1.4em;  } }
+@media all and (min-width: 900px)  {  .filter-first > a { font-size:1.5em;  } }
 
 #wrap{
     min-height: 100%;
@@ -51,6 +70,13 @@ and open the template in the editor.
     text-align: right;
     font-size: 14px;
 }
+.minwidth { 
+    min-width:100px; 
+    width: auto !important; 
+    width: 100px;
+    overflow: hidden !important;
+}
+
 .endangered-gallery{
     border-style: groove;
     border-color: black;
