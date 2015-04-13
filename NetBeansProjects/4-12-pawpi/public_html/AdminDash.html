@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+<title>TODO supply a title</title>
+<!--<meta charset="UTF-8">-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<script src="./js/jquery/jquery.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/leebc.js"></script>
+<link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="./css/leebc.css">
+<link type="text/css" rel="stylesheet" href="./css/bootstrap-theme.css">
+</head>
+<body>
+<!-- website wrapper -->
+<div class="container-fluid" id="wrap" style="min-width: 1024px;">
+<!-- Disclaimer -->
+<div class="container-fluid" style="background-color: black; text-align: center;" > 
+    <p style="color: white;"> THIS IS NOT A REAL WEBSITE THIS IS A PROJECT FOR CS 648</p>
+</div>
+<!-- logo divider -->
+<div class = "container-fluid pawpi-logo">
+   <!-- <img src="./img/paw_print.jpeg" alt="Paw Print" style="width:150px;height:75px"> -->
+        www.pawpi.com
+    <div class="container middle"></div>
+    <div class="login container">
+        <button type="button" class="btn pull-right btn-link">
+            signout
+        </button>
+        <span class="btn-separator"></span>
+        <a class="pull-right">
+            Hello, user
+        </a>
+    </div>
+    <!--
+    <div class="container login-with">login with:
+        <input type="submit" id="FB-Button" name="submit" value="">
+        <input type="submit" id="TW-Button" name="submit" value="">
+        <input type="submit" id="GP-Button" name="submit" value="">
+    </div>
+    -->
+</div>
+<!-- end of logo divider -->
+<div><br></div>
+<!-- navbar divider -->
+<nav class="navbar navbar-default" role="navigation">
+<div class="container-fluid">
+    <div class="full-width-tabs">
+        <ul class="nav nav-tabs">
+            <li class="active take-all-space-you-can"><a href="./index.html">Home</a></li>
+            <li class = "take-all-space-you-can"><a href="./DonatePet.html">Donate A Pet</a></li> 
+            <li class="dropdown take-all-space-you-can">
+            <a class="dropdown-toggle " data-toggle="dropdown" href="#">My Account<span class="caret"></span></a>
+            <ul class="dropdown-menu take-all-space-you-can">
+                <li><a href="#">My Inbox</a></li>
+                <li><a href="./MyListings.html">My Listings</a></li>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">My Favorites</a></li> 
+            </ul>
+            </li>
+            <li class = "take-all-space-you-can"><a href="#">About Us</a></li> 
+        </ul>
+    </div>
+</div>
+</nav> 
+<!-- end of navbar divider -->
+
+<!-- my listings view -->
+<div style='background-color: whitesmoke;'>
+<div class='row'>
+<div class="col-xs-12" style="min-width: 100%;">
+    <h3 style="text-align: center;text-decoration: underline;">Administrator Dash-Board</h3>
+</div>
+</div>
+
+<div class='row'>
+    <div class="col-xs-12" style="text-align: center; font-size: 28px;display:inline-block">
+    <div class="row">
+        <div class="admin-choice" data-content="#reportLinks">
+            Reported Links
+        </div>
+        <span class="seperator"></span>
+        <div class="admin-choice" data-content="#verifyShelter">
+            Verify Shelters
+        </div>
+        <span class="seperator"></span>
+        <div class="admin-choice" data-content="#notifyUsers">
+            Notify Users
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<div class="row-border"></div>
+<div class="row">
+<!--  Reported Links View       -->
+    <div class="admin-collapse" id="reportLinks">
+        <div class="col-xs-12" style="text-align: center; font-size: 28px;display:inline-block">
+            <a href="#and"> Allow</a>
+            <span class="seperator"></span>
+            <a href="#and"> Delete </a>
+        </div>
+    </div>
+<!-- End of Reported Links View -->
+
+<!--  Verify Shelter Accounts View       -->
+<div class="admin-collapse" id="verifyShelter">
+    <div class="row row-padding">
+        <div class="col-xs-12" style="text-align: center; font-size: 28px;display:inline-block">
+            <div class="checkbox display-inline ">
+                <label>
+                    <input type="checkbox"> Verify
+                </label>
+            </div>
+            <span class="seperator"></span>
+            <div class="checkbox display-inline">
+                <label>
+                    <input type="checkbox"> Reject
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row row-padding">
+        <div class="col-xs-2" style="float:left;"></div>
+        <div class="col-xs-8 border">
+            <div class="col-xs-1" style="float: left; text-align: right;">
+                <div class="row">
+                <div class="checkbox">
+                    <label><input type="checkbox"></label>
+                </div>
+                </div>
+                <div class="row">
+                <div class="checkbox">
+                    <label><input type="checkbox"></label>
+                </div>
+                </div>
+                <div class="row">
+                <div class="checkbox">
+                    <label><input type="checkbox"></label>
+                </div>
+                </div>
+                <div class="row">
+                <div class="checkbox">
+                    <label><input type="checkbox"></label>
+                </div>
+                </div>
+            </div>
+            <div class="col-xs-8" style="text-align: center;">
+                <div class="row row-padding">
+                    <a href="#and"> here's a link</a>
+                </div>
+                <div class="row row-padding">
+                    <a href="#and"> here's a link</a>
+                </div>
+                <div class="row row-padding">
+                    <a href="#and"> here's a link</a>
+                </div>
+                <div class="row row-padding">
+                    <a href="#and"> here's a link</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-xs-2" style="float:right;"></div>
+    </div>
+</div>
+<!-- End of Shelter Accounts View -->
+
+<!--  Send Notifications View       -->
+    <div class="admin-collapse" id="notifyUsers">
+    <div class="row row-padding">
+        <div class="col-xs-12" style="text-align: center; font-size: 28px;display:inline-block">
+            <div class="checkbox display-inline ">
+                <label>
+                    <input type="checkbox"> Notify All
+                </label>
+            </div>
+            <span class="seperator"></span>
+            <div class="checkbox display-inline">
+                <label>
+                    <input type="checkbox"> Shelters
+                </label>
+            </div>
+            <span class="seperator"></span>
+            <div class="checkbox display-inline">
+                <label>
+                    <input type="checkbox"> Non-Shelters
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row row-padding">
+        <div class="col-xs-2" style="float:left;"></div>
+        <div class="col-xs-8" style="position: relative;">
+            <form class="">
+            <div class="col-xs-1" style="float:left; text-align: right;">
+            <div class="row row-padding-small">
+                <label >To: </label>
+            </div>
+            <div class="row row-padding-small">
+                <label >CC: </label>
+            </div>
+            <div class="row row-padding-small">
+                <label class=""> Title:  </label>
+            </div>
+            </div>
+            <div class="col-xs-11" style=" text-align: left;">
+            <div class="row">
+                <input class="form-control" type="text"/>
+            </div>
+            <div class="row">
+                <input class="form-control" type="text" />
+            </div>
+            <div class="row">
+                <input class="form-control" type="text" />
+            </div>
+            </div>
+            </form>
+        </div>
+        <div class="col-xs-2" style="float:right;"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2 column-height-large" style="float:left;"></div>
+        <div class="col-xs-8 column-height-large">
+            <form class="" >
+            <div class="col-xs-1 column-height-large" style="float:left; text-align: right;">
+            <div class="row row-padding-small">
+                <label >Body: </label>
+            </div>
+            </div>
+            <div class="col-xs-11 column-height-large" style=" text-align: left;">
+            <div class="row">
+                <textarea class="form-control"  style="height: 355px;"></textarea>
+            </div>
+            <div class="row">
+                <button type="button" class="btn pull-right">
+                    Send
+                </button>
+                <span class="btn-separator"></span>
+                <button type="button" class="btn pull-right">
+                    Discard
+                </button>
+            </div>
+            </div>
+            </form>
+        </div>
+        <div class="col-xs-2 column-height-large"></div>
+    </div>
+    </div>
+<!-- End of Send Notifications View-->
+
+</div>
+</div>
+<!-- end of my listings --> 
+</div>
+<!-- End of homepage  Everything below are modals -->
+
+<script>
+$(document).ready(function(){
+    $("#toggleme").click(function(){
+        $("#viewdetails").toggle();
+    });
+});
+
+$("div.admin-choice").click (function(){
+    var $this = $(this);
+    var target = $this.data('content');
+    $('div.admin-choice').not($this).each(function(){
+       var $other = $(this);
+       var otherTarget = $other.data('content');
+       $(otherTarget).hide();        
+    });
+    $(target).toggle();
+    
+});
+</script>
+        
+    </body> 
+</html>
+

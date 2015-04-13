@@ -11,9 +11,11 @@ and open the template in the editor.
 <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 <script src="./js/jquery/jquery.js"></script>
 <script src="./js/bootstrap.js"></script>
+<script src="./js/leebc.js"></script>
 <link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
 <link type="text/css" rel="stylesheet" href="./css/leebc.css">
 <link type="text/css" rel="stylesheet" href="./css/bootstrap-theme.css">
+
 </head>
 <body>
 <!-- website wrapper -->
@@ -24,7 +26,7 @@ and open the template in the editor.
 </div>
 <!-- logo divider -->
 <div class = "container-fluid pawpi-logo">
-    <img src="./img/paw_print.jpeg" alt="Paw Print" style="width:150px;height:75px">
+   <!-- <img src="./img/paw_print.jpeg" alt="Paw Print" style="width:150px;height:75px"> -->
         www.pawpi.com
     <div class="container middle"></div>
     <div class="login container">
@@ -36,11 +38,13 @@ and open the template in the editor.
             login
         </button>
     </div>
+    <!--
     <div class="container login-with">login with:
         <input type="submit" id="FB-Button" name="submit" value="">
         <input type="submit" id="TW-Button" name="submit" value="">
         <input type="submit" id="GP-Button" name="submit" value="">
     </div>
+    -->
 </div>
 <!-- end of logo divider -->
 <div><br></div>
@@ -361,11 +365,6 @@ $(document).ready(function(){
         $("#viewdetails").toggle();
     });
 });
-
-function toggleThis(divID){
-        $(divID).toggle();
-}
-
 </script>
         
     </body> 
