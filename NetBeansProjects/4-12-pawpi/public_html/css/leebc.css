@@ -232,6 +232,8 @@ and open the template in the editor.
     height: 34px;
     width: 1px;
 }
+
+
 .favorite-options-separator:after{
     content: ' ';
     display: inline-block;
