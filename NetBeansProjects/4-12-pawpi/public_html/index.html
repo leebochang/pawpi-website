@@ -58,7 +58,7 @@ and open the template in the editor.
             <li class="dropdown take-all-space-you-can">
             <a class="dropdown-toggle " data-toggle="dropdown" href="#">My Account<span class="caret"></span></a>
             <ul class="dropdown-menu take-all-space-you-can">
-                <li><a href="#">My Inbox</a></li>
+                <li><a href="./inbox.html">My Inbox</a></li>
                 <li><a href="./MyListings.html">My Listings</a></li>
                 <li><a href="#">My Profile</a></li>
                 <li><a href="#">My Favorites</a></li> 
@@ -123,7 +123,7 @@ and open the template in the editor.
 </div>
 <div class="minwidth border" style="display:inline-block; position:absolute;">
 <!-- container for filter section-->
-<div class="col-xs-2" style= "">
+<div class="col-xs-3" style= "">
 <!--Sidebar content-->
     <div class="container border" style="position:relative; min-width: 70%; max-width: 70%; min-height: 500px; " >
         <div class="row">
@@ -132,17 +132,17 @@ and open the template in the editor.
             </div>
             <div class="collapse" id = "animalTypes">
             <div class="filter-second">
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> Dog
                 </label>
             </div>
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> Cat
                 </label>
             </div>
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> Other
                 </label>
@@ -156,12 +156,12 @@ and open the template in the editor.
             </div>
             <div class="collapse" id = "genderTypes">
             <div class="filter-second">
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> Male
                 </label>
             </div>
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> Female
                 </label>
@@ -175,27 +175,27 @@ and open the template in the editor.
             </div>
             <div class="collapse" id = "ageTypes">
             <div class="filter-second">
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> 0-1 years
                 </label>
             </div>
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> 1-2 years
                 </label>
             </div>
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> 2-5 years
                 </label>
             </div>
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> 5-10 years
                 </label>
             </div>
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> 10< years
                 </label>
@@ -209,27 +209,27 @@ and open the template in the editor.
             </div>
             <div class="collapse" id = "sizeTypes">
             <div class="filter-second">
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> x-small
                 </label>
             </div>
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> small
                 </label>
             </div>
-             <div class="checkbox display-inline ">
+             <div class="checkbox ">
                 <label>
                     <input type="checkbox"> medium
                 </label>
             </div>
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> large
                 </label>
             </div>
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> x-large
                 </label>
@@ -243,27 +243,27 @@ and open the template in the editor.
             </div>
             <div class="collapse" id = "locationTypes">
             <div class="filter-second">
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> within 10 miles
                 </label>
             </div>
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> within 25 miles
                 </label>
             </div>
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> within 50 miles
                 </label>
             </div>
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> within 100 miles
                 </label>
             </div>
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> anywhere
                 </label>
@@ -277,12 +277,12 @@ and open the template in the editor.
             </div>
             <div class="collapse" id = "donorTypes">
             <div class="filter-second">
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> Shelter
                 </label>
             </div>
-            <div class="checkbox display-inline ">
+            <div class="checkbox ">
                 <label>
                     <input type="checkbox"> Pet's Owner
                 </label>
@@ -294,7 +294,7 @@ and open the template in the editor.
 </div>                
 <!-- end of column for filters -->     
 <!-- column for image gallery -->
-<div class="col-xs-10 ">
+<div class="col-xs-9 ">
     <div class="container border" style=" position:relative; max-width:100%;">
         <div class="row">
             <h1 style="text-align: center;"> Pets Available For Adoption</h1>
@@ -422,12 +422,54 @@ and open the template in the editor.
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
 <div class="modal-dialog">
 <div class="modal-content">
-    <div class="modal-header">
+   <!-- <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <h4 class="modal-title" style="text-align:center;">LOGIN</h4>
-    </div>
+    </div> -->
     <div class="modal-body form-horizontal" style="text-align:center;">
-    <div class="container-fluid">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <div class="row-padding"></div>
+        <div class="row">
+            <div class="col-xs-2" style="float:left;"></div>
+            <div class="col-xs-8" style=" text-align: center;">
+                <form class=" ">
+                <div class="row">
+                    <button type="button" class="btn btn-block custom-button" data-dismiss="modal">login with </button>
+                </div>
+                <div class="row row-padding">
+                    <div class="col-xs-3" style="float:left;"></div>
+                    <div class="col-xs-2" style="float: left;">
+                    <input type="submit" id="FB-Button" name="submit" value="">
+                    </div>
+                    <div class="col-xs-2">
+                    <input type="submit" id="TW-Button" name="submit" value="">
+                    </div>
+                    <div class="col-xs-2" style="">
+                    <input type="submit" id="GP-Button" name="submit" value="">
+                    </div>
+                    <div class="col-xs-3" style="float:right;"></div>
+                </div>
+                <div class="row" style="">
+                    <div class="col-xs-1" style="float:left;"></div>
+                    <div class="col-xs-4 horizontal-line" style=""></div>
+                    <div class="col-xs-1" style="font-size: 20px; vertical-align: top;">or</div>
+                    <div class="col-xs-4 horizontal-line" style=""></div>
+                    <div class="col-xs-1"></div>
+                </div>
+                <div class="row">
+                    <label class=""></label>
+                    <input type="text" placeholder="username"/>
+                </div>
+                <div class="row">
+                    <label class=""></label>
+                    <input type="password" placeholder="password"/>
+                </div>
+                </form>
+            </div>
+            <div class="col-xs-2" style="float:right;"></div>
+        </div>
+    <!--<div class="container-fluid">
+         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <form class=" " >
         <div class="row">
             <label class="">Username: </label>
@@ -438,10 +480,10 @@ and open the template in the editor.
             <input type="password"/>
         </div>
         </form>
-    </div>
+    </div> -->
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-block" data-dismiss="modal">LOGIN</button>
+        <button type="button" class="btn btn-block custom-button" data-dismiss="modal">LOGIN</button>
     </div>
 </div>
 </div>
