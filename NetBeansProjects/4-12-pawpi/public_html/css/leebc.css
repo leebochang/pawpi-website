@@ -32,6 +32,11 @@ and open the template in the editor.
     background:#c4e3f3;
     
 }
+.test{
+    position: relative;
+    top: -15px;
+    right: 5px;
+}
 .pawpi-logo{
     color: black;
     font-family: serif;
@@ -244,6 +249,10 @@ and open the template in the editor.
     right: 0%;
     top: 50%;
 }
+.favorites-info{
+    text-align: left;
+    font-size: 18px;
+}
 .listing-options{
     text-align: right;
     font-size:48px;
@@ -287,8 +296,21 @@ and open the template in the editor.
     height: 12px;
     width: 3px;    
 }
+.choice{
+    display:inline-block;
+}
+.choice:hover{
+    display:inline-block;
+    color: blue;
+    cursor: pointer;
+}
+
 .admin-choice{
     display:inline-block;
+}
+.message-content{
+    color: black;
+    cursor: default;
 }
 .admin-choice:hover{
     display:inline-block;

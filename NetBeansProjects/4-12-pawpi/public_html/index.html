@@ -58,10 +58,11 @@ and open the template in the editor.
             <li class="dropdown take-all-space-you-can">
             <a class="dropdown-toggle " data-toggle="dropdown" href="#">My Account<span class="caret"></span></a>
             <ul class="dropdown-menu take-all-space-you-can">
+                <li><a href="./MyAccount.html">Manage Account</a></li>
                 <li><a href="./inbox.html">My Inbox</a></li>
                 <li><a href="./MyListings.html">My Listings</a></li>
-                <li><a href="#">My Profile</a></li>
-                <li><a href="#">My Favorites</a></li> 
+                <li><a href="./MyProfile.html">My Profile</a></li>
+                <li><a href="./MyFavorites.html">My Favorites</a></li> 
             </ul>
             </li>
             <li class = "take-all-space-you-can"><a href="#">About Us</a></li> 
@@ -69,7 +70,7 @@ and open the template in the editor.
     </div>
 </div>
 </nav> 
-<!-- end of navbar divider --> 
+<!-- end of navbar divider -->
 <!-- endangered animal gallery -->
 <div class="container-fluid " style="background-color:#204d74;">
     <div class="container endangered-gallery">
@@ -79,27 +80,33 @@ and open the template in the editor.
         <div class="row ">
         <div class="img-container">
             <span class="text-center" style="float:top;">Adopt Max!</span>
-            <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
+            <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
             <a class="button-overlay" href="#">
                 <span class="glyphicon glyphicon-heart"></span>
             </a>
-            <span class="text-center" style="float:bottom;">24:23:01</span>
+            <span class="text-center" style="float:bottom;">Time Left:
+            <span id = time>05:00</span>
+            </span>
         </div>
         <div class="img-container">
             <span class="text-center" style="float:top;">Adopt Max!</span>
-            <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
+            <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
             <a class="button-overlay" href="#">
                 <span class="glyphicon glyphicon-heart"></span>
             </a>
-            <span class="text-center" style="float:bottom;">24:23:01</span>
+            <span class="text-center" style="float:bottom;">Time Left:
+            <span id = time1>05:00</span>
+            </span>
         </div>
         <div class="img-container">
             <span class="text-center" style="float:top;">Adopt Max!</span>
-            <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
+            <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
             <a class="button-overlay" href="#">
                 <span class="glyphicon glyphicon-heart"></span>
             </a>
-            <span class="text-center" style="float:bottom;">24:23:01</span>
+            <span class="text-center" style="float:bottom;">Time Left:
+            <span id = time2>05:00</span>
+            </span>
         </div>
         </div>   
     </div>
@@ -121,11 +128,11 @@ and open the template in the editor.
 <div class="container-fluid" style="background-color:black;">
     <div class="row-border"></div>
 </div>
-<div class="minwidth border" style="display:inline-block; position:absolute;">
+<div class="minwidth" style="display:inline-block; position:absolute;">
 <!-- container for filter section-->
 <div class="col-xs-3" style= "">
 <!--Sidebar content-->
-    <div class="container border" style="position:relative; min-width: 70%; max-width: 70%; min-height: 500px; " >
+    <div class="container" style="position:relative; min-width: 70%; max-width: 70%; min-height: 500px; " >
         <div class="row">
             <div class="filter-first">
             <a href="#add" class="filter-by-type" id="animalFilter" onclick="toggleThis('#animalTypes')"> Animal</a>
@@ -295,51 +302,28 @@ and open the template in the editor.
 <!-- end of column for filters -->     
 <!-- column for image gallery -->
 <div class="col-xs-9 ">
-    <div class="container border" style=" position:relative; max-width:100%;">
+    <div class="container" style=" position:relative; max-width:100%;">
         <div class="row">
             <h1 style="text-align: center;"> Pets Available For Adoption</h1>
         </div>
         <div class="row ">
         <div class="img-container">
             <span class="text-center" style="float:top;">Adopt Max!</span>
-            <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
+            <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
             <a class="button-overlay" href="#">
                 <span class="glyphicon glyphicon-heart"></span>
             </a>    
         </div>
         <div class="img-container">
             <span class="text-center" style="float:top;">Adopt Max!</span>
-            <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
+            <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
             <a class="button-overlay" href="#">
                 <span class="glyphicon glyphicon-heart"></span>
             </a>
         </div>
         <div class="img-container">
             <span class="text-center" style="float:top;">Adopt Max!</span>
-            <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
-            <a class="button-overlay" href="#">
-                <span class="glyphicon glyphicon-heart"></span>
-            </a>    
-        </div>
-        </div>
-        <div class="row ">
-        <div class="img-container border">
-            <span class="text-center" style="float:top;">Adopt Max!</span>
-            <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
-            <a class="button-overlay" href="#">
-                <span class="glyphicon glyphicon-heart"></span>
-            </a>
-        </div>
-        <div class="img-container">
-            <span class="text-center" style="float:top;">Adopt Max!</span>
-            <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
-            <a class="button-overlay" href="#">
-                <span class="glyphicon glyphicon-heart"></span>
-            </a>
-        </div>
-        <div class="img-container">
-            <span class="text-center" style="float:top;">Adopt Max!</span>
-            <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
+            <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
             <a class="button-overlay" href="#">
                 <span class="glyphicon glyphicon-heart"></span>
             </a>    
@@ -347,19 +331,42 @@ and open the template in the editor.
         </div>
         <div class="row ">
         <div class="img-container">
-            <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
+            <span class="text-center" style="float:top;">Adopt Max!</span>
+            <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
             <a class="button-overlay" href="#">
                 <span class="glyphicon glyphicon-heart"></span>
             </a>
         </div>
         <div class="img-container">
-            <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
+            <span class="text-center" style="float:top;">Adopt Max!</span>
+            <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
             <a class="button-overlay" href="#">
                 <span class="glyphicon glyphicon-heart"></span>
             </a>
         </div>
         <div class="img-container">
-            <a href="AnimalViewPage.php"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
+            <span class="text-center" style="float:top;">Adopt Max!</span>
+            <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
+            <a class="button-overlay" href="#">
+                <span class="glyphicon glyphicon-heart"></span>
+            </a>    
+        </div>
+        </div>
+        <div class="row ">
+        <div class="img-container">
+            <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
+            <a class="button-overlay" href="#">
+                <span class="glyphicon glyphicon-heart"></span>
+            </a>
+        </div>
+        <div class="img-container">
+            <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
+            <a class="button-overlay" href="#">
+                <span class="glyphicon glyphicon-heart"></span>
+            </a>
+        </div>
+        <div class="img-container">
+            <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="img-thumbnail"></div></a>
             <a class="button-overlay" href="#">
                 <span class="glyphicon glyphicon-heart"></span>
             </a>    
@@ -376,43 +383,80 @@ and open the template in the editor.
 <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
 <div class="modal-dialog">
 <div class="modal-content">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" style="text-align:center;">REGISTRATION</h4>
-    </div>
     <div class="modal-body form-horizontal" style="text-align:center;">
-    <div class="container-fluid" style="text-align: center">
-        <form class=" " >
-            <div class="row">
-                <label class="">Username: </label>
-                <input type="text"/>
-            </div>
-            <div class="row">
-                <label class="" style="padding-left:30px;">Email:</label>
-                <input type="text"/>
-            </div>
-            <div class="row">
-                <label class="" style="padding-left:1px"> Password: </label>
-                <input type="password"/>
-            </div>
-            <div class="row">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <div class="row-padding"></div>
+        <div class="row">
+            <div class="col-xs-2" style="float:left;"></div>
+            <div class="col-xs-8" style=" text-align: center;">
+                <form class=" ">
+                <div class="row">
+                    <!--<button type="button" class="btn btn-block custom-button" data-dismiss="modal">login with </button>-->
+                    <h3>register with</h3>
+                </div>
+                <div class="row row-padding">
+                    <div class="col-xs-3" style="float:left;"></div>
+                    <div class="col-xs-2" style="float: left;">
+                    <input type="submit" id="FB-Button" name="submit" value="">
+                    </div>
+                    <div class="col-xs-2">
+                    <input type="submit" id="TW-Button" name="submit" value="">
+                    </div>
+                    <div class="col-xs-2" style="">
+                    <input type="submit" id="GP-Button" name="submit" value="">
+                    </div>
+                    <div class="col-xs-3" style="float:right;"></div>
+                </div>
+                <div class="row" style="">
+                    <div class="col-xs-1" style="float:left;"></div>
+                    <div class="col-xs-4 horizontal-line" style=""></div>
+                    <div class="col-xs-1 test" style="font-size: 20px; vertical-align: top;">or</div>
+                    <div class="col-xs-4 horizontal-line" style=""></div>
+                    <div class="col-xs-1"></div>
+                </div>
+                <div class="row">
+                    <label class=""></label>
+                    <input type="text" placeholder="username"/>
+                </div>
+                <div class="row">
+                    <label class=""></label>
+                    <input type="text" placeholder="email"/>
+                </div>
+                <div class="row">
+                    <label class=""></label>
+                    <input type="password" placeholder="password"/>
+                </div>
                 <button type = "button" class="btn-link" id="toggleme">registering for shelter? click here</button>
-            <div id="viewdetails" style="display:none;">
-            <div class="row">
-                <label class="" style="padding-left:30px;">Email:</label>
-                <input type="text"/>
+                <div id="viewdetails" style="display:none;">
+                <div class="row">
+                    <label class=""></label>
+                    <input type="text" placeholder="shelter name"/>
+                </div>
+                <div class="row">
+                    <label class=""></label>
+                    <input type="text" placeholder="shelter address"/>
+                </div>
+                </div>
+                </form>
             </div>
-            <div class="row">
-                <label class="" style="padding-left:1px"> Password: </label>
-                <input type="password"/>
-            </div>
-            </div>
-            </div>
+            <div class="col-xs-2" style="float:right;"></div>
+        </div>
+    <!--<div class="container-fluid">
+         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <form class=" " >
+        <div class="row">
+            <label class="">Username: </label>
+            <input type="text"/>
+        </div>
+        <div class="row">
+            <label class="" style="padding-left:1px"> Password: </label>
+            <input type="password"/>
+        </div>
         </form>
-    </div>
+    </div> -->
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-block" data-dismiss="modal">REGISTER</button>
+        <button type="button" class="btn btn-block custom-button" data-dismiss="modal">REGISTER</button>
     </div>
 </div>
 </div>
@@ -434,7 +478,8 @@ and open the template in the editor.
             <div class="col-xs-8" style=" text-align: center;">
                 <form class=" ">
                 <div class="row">
-                    <button type="button" class="btn btn-block custom-button" data-dismiss="modal">login with </button>
+                    <!--<button type="button" class="btn btn-block custom-button" data-dismiss="modal">login with </button>-->
+                    <h3>login with</h3>
                 </div>
                 <div class="row row-padding">
                     <div class="col-xs-3" style="float:left;"></div>
@@ -452,7 +497,7 @@ and open the template in the editor.
                 <div class="row" style="">
                     <div class="col-xs-1" style="float:left;"></div>
                     <div class="col-xs-4 horizontal-line" style=""></div>
-                    <div class="col-xs-1" style="font-size: 20px; vertical-align: top;">or</div>
+                    <div class="col-xs-1 test" style="font-size: 20px; vertical-align: top;">or</div>
                     <div class="col-xs-4 horizontal-line" style=""></div>
                     <div class="col-xs-1"></div>
                 </div>
@@ -495,6 +540,40 @@ $(document).ready(function(){
         $("#viewdetails").toggle();
     });
 });
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.text(minutes + ":" + seconds);
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+jQuery(function ($) {
+    var fiveMinutes = 60 * 5,
+        display = $('#time');
+    startTimer(fiveMinutes, display);
+});
+jQuery(function ($) {
+    var fiveMinutes = 60 * 5,
+        display = $('#time1');
+    startTimer(fiveMinutes, display);
+});
+jQuery(function ($) {
+    var fiveMinutes = 60 * 5,
+        display = $('#time2');
+    startTimer(fiveMinutes, display);
+});
+
+
 </script>
         
     </body> 
