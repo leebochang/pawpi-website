@@ -37,6 +37,22 @@ and open the template in the editor.
     top: -15px;
     right: 5px;
 }
+.pawpi-logo-text{
+    position:absolute;
+    font-family: sans-serif;
+    font-size: 34px;
+    color: #204d74;
+}
+.pawpi-logo-img{
+  display: inline-block;
+  max-width: 100%;
+  max-height:300px;
+  height: auto;
+  line-height: 1.42857143;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
 .pawpi-logo{
     color: black;
     font-family: serif;
@@ -44,6 +60,39 @@ and open the template in the editor.
     position: relative;
     top:0;
     left:0;
+}
+
+.content-box{
+    background-color: #f8f8f8;
+    border-radius:0px;
+    
+}
+.col-xs-5 > .content-box-header{
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+}
+.col-xs-4 > .content-box-header{
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+}
+.content-box-header{
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+}
+.content-box-details{
+}
+.filter-style{
+    border-right-color: #286090; border-right-style: solid; border-right-width: 4px;
+    border-left-color: #286090; border-left-style: solid; border-left-width: 4px;
+    //border-top-right-radius: 50px;
+    //border-bottom-right-radius: 50px;
+    border-radius: 50px;
 }
 
 .login{
