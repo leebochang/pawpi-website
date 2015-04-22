@@ -11,49 +11,35 @@ and open the template in the editor.
 <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 <script src="./js/jquery/jquery.js"></script>
 <script src="./js/bootstrap.js"></script>
+<script src="./js/leebc.js"></script>
 <link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
 <link type="text/css" rel="stylesheet" href="./css/leebc.css">
 <link type="text/css" rel="stylesheet" href="./css/bootstrap-theme.css">
+
 </head>
 <body>
 <!-- website wrapper -->
-<div class="container-fluid" id="wrap" style="min-width: 1024px;">
+<div class="container-fluid" id="wrap" style="min-width: 1024px; max-width: 95vw; background-color:white">
 <!-- Disclaimer -->
 <div class="container-fluid" style="background-color: black; text-align: center;" > 
-    <p style="color: white;"> THIS IS NOT A REAL WEBSITE THIS IS A PROJECT FOR CS 648</p>
+    <p style="color: white;"> THIS WEBSITE IS A PROJECT FOR SFSU CSC-648: SOFTWARE ENGINEERING</p>
 </div>
-<!-- logo divider -->
-<div class = "container-fluid pawpi-logo">
-   <!-- <img src="./img/paw_print.jpeg" alt="Paw Print" style="width:150px;height:75px"> -->
-        www.pawpi.com
-    <div class="container middle"></div>
-    <div class="login container">
-        <button type="button" class="btn pull-right btn-link">
-            signout
-        </button>
-        <span class="btn-separator"></span>
-        <a class="pull-right">
-            Hello, user
-        </a>
-    </div>
-    <!--
-    <div class="container login-with">login with:
-        <input type="submit" id="FB-Button" name="submit" value="">
-        <input type="submit" id="TW-Button" name="submit" value="">
-        <input type="submit" id="GP-Button" name="submit" value="">
-    </div>
-    -->
-</div>
-<!-- end of logo divider -->
-<div><br></div>
+
+
 <!-- navbar divider -->
-<nav class="navbar navbar-default" role="navigation">
-<div class="container-fluid">
+
+    <div class="col-xs-3">
+        <span class="pawpi-logo-text"><a href="./index.html">Find Your Pet A Home!</a></span>
+        <a href="./index.html"><img src="img/brown-labrador-puppy.png" alt="pawpilogo" class="pawpi-logo-img"  /></a>
+    </div>
+    <div class="col-xs-6">
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
     <div class="full-width-tabs">
         <ul class="nav nav-tabs">
-            <li class="take-all-space-you-can"><a href="./index.html">Home</a></li>
+            <li class="active take-all-space-you-can"><a href="./index.html">Home</a></li>
             <li class = "take-all-space-you-can"><a href="./DonatePet.html">Donate A Pet</a></li> 
-            <li class="active dropdown take-all-space-you-can">
+            <li class="dropdown take-all-space-you-can">
             <a class="dropdown-toggle " data-toggle="dropdown" href="#">My Account<span class="caret"></span></a>
             <ul class="dropdown-menu take-all-space-you-can">
                 <li><a href="./MyAccount.html">Manage Account</a></li>
@@ -66,27 +52,39 @@ and open the template in the editor.
             <li class = "take-all-space-you-can"><a href="#">About Us</a></li> 
         </ul>
     </div>
-</div>
-</nav> 
+    </div>
+    </nav>
+    </div>
+    <div class="col-xs-3">
+        <button type="button" class="btn pull-right btn-link">
+            signout
+        </button>
+        <span class="btn-separator"></span>
+        <a class="pull-right">
+            Hello, user
+        </a>
+    </div>
 <!-- end of navbar divider -->
 
 <!-- my listings view -->
-<div class="row"><div class="row-border"></div></div>
-<div style='background-color: whitesmoke;'>
+<div>
 <div class='row'>
 <div class="col-xs-12" style="min-width: 100%;">
     <h3 style="text-align: center;text-decoration: underline;">My Listings</h3>
 </div>
 </div>
 
-<div class="row row-padding">
-    <div class="col-xs-2 column-height" style="float: left;">
-        <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="mythumbnail"></div></a> 
+<div class="row row-padding content-box" style="">
+    <div class="col-xs-3 column-height" style="">
+        <div class="img-border">
+            <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="mythumbnail"></div></a> 
+        </div>
     </div>
-    <div class="col-xs-4  column-height ">
-        <h3 class="listing-name">Fredo</h3>
+    <div class="col-xs-1"></div>
+    <div class="col-xs-2  column-height" style="position:relative;">
+        <a href="#and"> <span class="listing-name">Fredo</span></a>
     </div>
-    <div class="col-xs-6 column-height ">
+    <div class="col-xs-6 column-height " style="">
         <a href="#and" class="listing-options"> Delete </a>
         <span class="favorite-options-separator listing-options"></span>
         <a href="#and" class="listing-options"> Adopted! </a>
@@ -94,14 +92,18 @@ and open the template in the editor.
         <a href="UpdatePetProfile.html" class="listing-options"> Edit </a>
     </div>
 </div>
-<div class="row row-padding">
-    <div class="col-xs-2 column-height " style="float: left;">
-        <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="mythumbnail"></div></a> 
+<div class="row row-padding-small"></div>
+<div class="row row-padding content-box" style="">
+    <div class="col-xs-3 column-height" style="">
+        <div class="img-border">
+            <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="mythumbnail"></div></a> 
+        </div>
     </div>
-    <div class="col-xs-4  column-height ">
-        <h3 class="listing-name">Fredo</h3>
+    <div class="col-xs-1"></div>
+    <div class="col-xs-2  column-height" style="position:relative;">
+        <a href="#and"> <span class="listing-name">Fredo</span></a>
     </div>
-    <div class="col-xs-6 column-height ">
+    <div class="col-xs-6 column-height " style="">
         <a href="#and" class="listing-options"> Delete </a>
         <span class="favorite-options-separator listing-options"></span>
         <a href="#and" class="listing-options"> Adopted! </a>
@@ -109,15 +111,18 @@ and open the template in the editor.
         <a href="UpdatePetProfile.html" class="listing-options"> Edit </a>
     </div>
 </div>
-
-<div class="row row-padding">
-    <div class="col-xs-2 column-height " style="float: left;">
-        <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="mythumbnail"></div></a> 
+<div class="row row-padding-small"></div>
+<div class="row row-padding content-box" style="">
+    <div class="col-xs-3 column-height" style="">
+        <div class="img-border">
+            <a href="AnimalViewPage.html"><div class=""><img src="./img/standard-dog.jpg" alt="dog" class="mythumbnail"></div></a> 
+        </div>
     </div>
-    <div class="col-xs-4  column-height ">
-        <h3 class="listing-name">Fredo</h3>
+    <div class="col-xs-1"></div>
+    <div class="col-xs-2  column-height" style="position:relative;">
+        <a href="#and"> <span class="listing-name">Fredo</span></a>
     </div>
-    <div class="col-xs-6 column-height ">
+    <div class="col-xs-6 column-height " style="">
         <a href="#and" class="listing-options"> Delete </a>
         <span class="favorite-options-separator listing-options"></span>
         <a href="#and" class="listing-options"> Adopted! </a>
