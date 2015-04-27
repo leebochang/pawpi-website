@@ -1,8 +1,10 @@
+
 function toggleThis(divID){
         $(divID).toggle();
 }
-
-
+function toggleThisSlow(divID){
+        $(divID).animate({width:"toggle" , height:"toggle"},200);
+}
 /*function toggleThree(divClassLink, divClassContent){
     var $this = $(this);
     var target = $this.data(divClassContent);

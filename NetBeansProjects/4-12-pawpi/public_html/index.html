@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="en">
 <head>
 <title>TODO supply a title</title>
@@ -12,17 +7,19 @@ and open the template in the editor.
 <script src="./js/jquery/jquery.js"></script>
 <script src="./js/bootstrap.js"></script>
 <script src="./js/leebc.js"></script>
+<script src="./js/populateDiv.js"></script>
 <link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
 <link type="text/css" rel="stylesheet" href="./css/leebc.css">
 <link type="text/css" rel="stylesheet" href="./css/bootstrap-theme.css">
 
+
 </head>
 <body>
 <!-- website wrapper -->
-<div class="container-fluid" id="wrap" style="min-width: 1024px; max-width: 95vw; background-color:white">
+<div class="container-fluid" id="wrap" style="min-width: 1024px; max-width: 100vw; background-color: whitesmoke;">
 <!-- Disclaimer -->
 <div class="container-fluid" style="background-color: black; text-align: center;" > 
-    <p style="color: white;"> THIS WEBSITE IS A PROJECT FOR SFSU CSC-648: SOFTWARE ENGINEERING</p>
+    <p style="color: white;"> THIS WEBSITE IS A PROJECT FOR SAN FRANCISCO STATE UNIVERSITY CSC-648: SOFTWARE ENGINEERING</p>
 </div>
 
 
@@ -32,7 +29,7 @@ and open the template in the editor.
         <span class="pawpi-logo-text2">www.pawpi.com</span>
         <img src="img/pawpilogo.png" alt="pawpilogo" class="pawpi-logo-img">
     </div> 
-    <div class="col-xs-6">
+    <div class="col-xs-6" >
     <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
     <div class="full-width-tabs">
@@ -65,40 +62,58 @@ and open the template in the editor.
         </button>
     </div>
 
-<div class="col-xs-5 content-box" style="border-right-color:white; border-right-width: 4px; border-right-style: solid;">
+<div class="col-xs-6 content-box filter-style" style=" background-color: white;">
+    <p class="content-box-header">Featured Animals!</p>
+    <div class="col-xs-4" style="text-align: center; bottom: 15px;">
+    <span class="img-wrapper">
+        <img src="img/standard-dog.jpg" class="mythumbnail" alt="doggie"/>
+        <a class="button-overlay" href="#">
+            <span class="glyphicon glyphicon-heart"></span>
+        </a>
+    </span>
+    </div>
+    <div class="col-xs-4" style="text-align: center; bottom: 15px;">
+    <span class="img-wrapper">
+        <img src="img/standard-dog.jpg" class="mythumbnail" alt="doggie"/>
+        <a class="button-overlay" href="#">
+            <span class="glyphicon glyphicon-heart"></span>
+        </a>
+    </span>
+    </div>
+    <div class="col-xs-4" style="text-align: center; bottom: 15px;">
+    <span class="img-wrapper">
+        <img src="img/standard-dog.jpg" class="mythumbnail" alt="doggie"/>
+        <a class="button-overlay" href="#">
+            <span class="glyphicon glyphicon-heart"></span>
+        </a>
+    </span>
+    </div>
+</div>
+<div class="col-xs-3 content-box filter-style" style=" background-color:white;">
     <p class="content-box-header">What We Do</p>
     <p>We are a San Francisco based Pet Adoption Service, our goal at Pawpi is to make sure that our furry little friends will be able
        to find a safe and loving home as soon as possible, For more info please go to our <a href='#and'>About Us</a></p>
 </div>
-<div class="col-xs-4 content-box">
-    <p class="content-box-header">How You Can Help</p>
-    <p>Approximately 7.6 million companion animals enter animal shelters nationwide every year. Each year, approximately 2.7 million animals are euthanized.
-       Help our furry little friends out and <a href='#and'>Adopt</a> an animal that's in need of a home.</p>
-</div>
-<div class="col-xs-10">
-    <div class='col-xs-12' style="border-bottom-color: gainsboro; border-bottom-style: solid; border-bottom-width: 4px;">
-        <h3 style='text-align: center;'>Find A New Pet Today!</h3>
-    </div>
-    <div class='col-xs-12'>
-        <form action="#" method="post" id="search_form" class="clearfix">
-        <input type="text" size="40" maxlength="150" name="search_text" placeholder="i.e. (cat, dog)" id="search_text" />
-        <input type="submit" name="search" value="Search" id="search_button" />
-        </form>
+<div class="col-xs-10" style='bottom: 40px;'>
+    <div class='col-xs-12' style='position:relative;'>
+        <img src='./img/find.png' style =" width: auto; height: 50px; display: inline-block;" id = "search_img" alt='searchimage' onclick="toggleThisSlow('#search_bar')">
+        <div class="collapse" id = 'search_bar' style='left: 75px; bottom: 5px; position:absolute;'>
+            <form action=" " method="post" id="search_form" class="clearfix">
+                <input type="text" size="40" class="form-control" maxlength="150" name="name" placeholder="i.e. (furry kitten, yellow lab)" id="search_text" />
+                <input type="submit" name="search" value="Search" id="search_button" /> 
+            </form>
+        </div>
     </div>
 </div>
-<!-- end of search bar-->
-<div class='col-xs-1 '></div>
-<div class="col-xs-2 ">
-    <img src='img/englishbulldog.png' alt='englishbulldog' style='max-height: 125px; max-width: 100%;'/>
-</div>
+<!-- end of search bar -->
 <div class="col-xs-12 "></div>
-
 <!--Sidebar content-->
-<div class="col-xs-2 content-box filter-style">
+<!--<div class="row"></div>-->
+<div class="col-xs-2 filter-style" style='background-color: white; bottom: 40px;'>
     <div class="container" style="position:relative; min-width: 70%; max-width: 70%; min-height: 500px; " >
-        <div class="row">
+        <div class="row row-border-small">
             <div class="filter-first">
-                <a href="#add" class="filter-by-type" id="animalFilter" onclick="toggleThis('#animalTypes')"> Animal</a>
+                <a href="#add" class="filter-by-type" id="animalFilter" onclick="toggleThis('#animalTypes')"> Animal Type</a>
             </div>
             <div class="collapse" style="display: block;" id = "animalTypes">
             <div class="filter-second">
@@ -120,11 +135,11 @@ and open the template in the editor.
             </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row row-border-small">
             <div class="filter-first">
                 <a href="#add" class="filter-by-type" id="genderFilter" onclick="toggleThis('#genderTypes')"> Gender</a>
             </div>
-            <div class="collapse" id = "genderTypes">
+            <div class="collapse" style="display: block;" id = "genderTypes">
             <div class="filter-second">
             <div class="checkbox ">
                 <label>
@@ -139,11 +154,11 @@ and open the template in the editor.
             </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row row-border-small">
             <div class="filter-first">
                 <a href="#add" class="filter-by-type" id="ageFilter" onclick="toggleThis('#ageTypes')"> Age</a>
             </div>
-            <div class="collapse" id = "ageTypes">
+            <div class="collapse" style="display: block;" id = "ageTypes">
             <div class="filter-second">
             <div class="checkbox ">
                 <label>
@@ -173,11 +188,11 @@ and open the template in the editor.
             </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row row-border-small">
             <div class="filter-first">
                 <a href="#add" class="filter-by-type" id="sizeFilter" onclick="toggleThis('#sizeTypes')"> Size</a>
             </div>
-            <div class="collapse" id = "sizeTypes">
+            <div class="collapse" style="display: block;" id = "sizeTypes">
             <div class="filter-second">
             <div class="checkbox ">
                 <label>
@@ -207,11 +222,11 @@ and open the template in the editor.
             </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row row-border-small">
             <div class="filter-first">
                 <a href="#add" class="filter-by-type" id="locationFilter" onclick="toggleThis('#locationTypes')"> Location</a>
             </div>
-            <div class="collapse" id = "locationTypes">
+            <div class="collapse" style="display: block;" id = "locationTypes">
             <div class="filter-second">
             <div class="checkbox ">
                 <label>
@@ -230,7 +245,7 @@ and open the template in the editor.
             </div>
             <div class="checkbox ">
                 <label>
-                    <input type="checkbox"> within 100 miles
+                    <input type="checkbox"> within 99 miles
                 </label>
             </div>
             <div class="checkbox ">
@@ -241,11 +256,11 @@ and open the template in the editor.
             </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row ">
             <div class="filter-first">
                 <a href="#add" class="filter-by-type" id="donorFilter" onclick="toggleThis('#donorTypes')"> Donor</a>
             </div>
-            <div class="collapse" id = "donorTypes">
+            <div class="collapse" style="display: block;" id = "donorTypes">
             <div class="filter-second">
             <div class="checkbox ">
                 <label>
@@ -266,25 +281,19 @@ and open the template in the editor.
 <!-- end of column for filters -->
 
 <!--gallery content-->
-<div class="col-xs-10 content-box filter-style" style="min-height:500px;">
+<div class="col-xs-10 content-box filter-style" id ="imgGallery" style="bottom: 40px; background-color:white; min-height:500px;">
+    <div class="content-box-header">
+        <p>Find A Pet Today!</p>
+    </div>
     <div class="row row-padding-small"></div>
     <div class="col-xs-12">
-        <span style=' float: right; text-align: right; color: #d58512;'> Total Results: 3</span>
-    </div>
-    <div class="row row-padding"></div>
-    <div class="col-xs-4" style="">
-        <div class="col-xs-12 img-border">
-            <div class="row">
-                <a href="#and">Adopt Max!</a>
-            </div>
-            <span class="img-wrapper">
-            <img src="img/standard-dog.jpg" class="mythumbnail" alt="doggie"/>
-            <a class="button-overlay" href="#">
-                <span class="glyphicon glyphicon-heart"></span>
-            </a>
-            </span>
+        <span style=' float: right; text-align: right; color: #d58512;' id = 'totalResults'> </span>
+        <div style="position:absolute; right: -3em; top: -125px;">
+            <img src='img/mylogocat.png' alt='logocat' style='max-height: 125px; max-width: 100%; float: right;'/>
         </div>
     </div>
+    <div class="row row-padding"></div>
+
 </div>
 <!--end of gallery content-->
 <!-- Register Modal -->
@@ -349,19 +358,6 @@ and open the template in the editor.
             </div>
             <div class="col-xs-2" style="float:right;"></div>
         </div>
-    <!--<div class="container-fluid">
-         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <form class=" " >
-        <div class="row">
-            <label class="">Username: </label>
-            <input type="text"/>
-        </div>
-        <div class="row">
-            <label class="" style="padding-left:1px"> Password: </label>
-            <input type="password"/>
-        </div>
-        </form>
-    </div> -->
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-block custom-button" data-dismiss="modal">REGISTER</button>
@@ -374,10 +370,6 @@ and open the template in the editor.
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
 <div class="modal-dialog">
 <div class="modal-content">
-   <!-- <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" style="text-align:center;">LOGIN</h4>
-    </div> -->
     <div class="modal-body form-horizontal" style="text-align:center;">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <div class="row-padding"></div>
@@ -421,19 +413,6 @@ and open the template in the editor.
             </div>
             <div class="col-xs-2" style="float:right;"></div>
         </div>
-    <!--<div class="container-fluid">
-         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <form class=" " >
-        <div class="row">
-            <label class="">Username: </label>
-            <input type="text"/>
-        </div>
-        <div class="row">
-            <label class="" style="padding-left:1px"> Password: </label>
-            <input type="password"/>
-        </div>
-        </form>
-    </div> -->
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-block custom-button" data-dismiss="modal">LOGIN</button>
@@ -449,6 +428,12 @@ $(document).ready(function(){
     $("#toggleme").click(function(){
         $("#viewdetails").toggle();
     });
+});
+$(document).click(function(e){
+    var target = e.target;
+    if (!$(target).is('#search_img') && !$(target).is('#search_button') && !$(target).is('#search_text')){
+        $('#search_bar').hide('200');
+    }
 });
 
 </script>

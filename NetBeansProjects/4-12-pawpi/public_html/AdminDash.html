@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html lang="en">
 <head>
 <title>TODO supply a title</title>
@@ -12,49 +8,36 @@ and open the template in the editor.
 <script src="./js/jquery/jquery.js"></script>
 <script src="./js/bootstrap.js"></script>
 <script src="./js/leebc.js"></script>
+<script src="./js/populateDiv.js"></script>
 <link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
 <link type="text/css" rel="stylesheet" href="./css/leebc.css">
 <link type="text/css" rel="stylesheet" href="./css/bootstrap-theme.css">
+
+
 </head>
 <body>
 <!-- website wrapper -->
-<div class="container-fluid" id="wrap" style="min-width: 1024px;">
+<div class="container-fluid" id="wrap" style="min-width: 1024px; max-width: 100vw; background-color: whitesmoke;">
 <!-- Disclaimer -->
 <div class="container-fluid" style="background-color: black; text-align: center;" > 
-    <p style="color: white;"> THIS IS NOT A REAL WEBSITE THIS IS A PROJECT FOR CS 648</p>
+    <p style="color: white;"> THIS WEBSITE IS A PROJECT FOR SAN FRANCISCO STATE UNIVERSITY CSC-648: SOFTWARE ENGINEERING</p>
 </div>
-<!-- logo divider -->
-<div class = "container-fluid pawpi-logo">
-   <!-- <img src="./img/paw_print.jpeg" alt="Paw Print" style="width:150px;height:75px"> -->
-        www.pawpi.com
-    <div class="container middle"></div>
-    <div class="login container">
-        <button type="button" class="btn pull-right btn-link">
-            signout
-        </button>
-        <span class="btn-separator"></span>
-        <a class="pull-right">
-            Hello, user
-        </a>
-    </div>
-    <!--
-    <div class="container login-with">login with:
-        <input type="submit" id="FB-Button" name="submit" value="">
-        <input type="submit" id="TW-Button" name="submit" value="">
-        <input type="submit" id="GP-Button" name="submit" value="">
-    </div>
-    -->
-</div>
-<!-- end of logo divider -->
-<div><br></div>
+
+
 <!-- navbar divider -->
-<nav class="navbar navbar-default" role="navigation">
-<div class="container-fluid">
+
+    <div class="col-xs-3">
+        <span class="pawpi-logo-text2">www.pawpi.com</span>
+        <img src="img/pawpilogo.png" alt="pawpilogo" class="pawpi-logo-img">
+    </div> 
+    <div class="col-xs-6" >
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
     <div class="full-width-tabs">
         <ul class="nav nav-tabs">
-            <li class="take-all-space-you-can"><a href="./index.html">Home</a></li>
+            <li class="active take-all-space-you-can"><a href="./index.html">Home</a></li>
             <li class = "take-all-space-you-can"><a href="./DonatePet.html">Donate A Pet</a></li> 
-            <li class="active dropdown take-all-space-you-can">
+            <li class="dropdown take-all-space-you-can">
             <a class="dropdown-toggle " data-toggle="dropdown" href="#">My Account<span class="caret"></span></a>
             <ul class="dropdown-menu take-all-space-you-can">
                 <li><a href="./MyAccount.html">Manage Account</a></li>
@@ -67,8 +50,18 @@ and open the template in the editor.
             <li class = "take-all-space-you-can"><a href="#">About Us</a></li> 
         </ul>
     </div>
-</div>
-</nav> 
+    </div>
+    </nav>
+    </div>
+    <div class="col-xs-3" style=' '>
+        <button type="button" class="btn pull-right btn-link">
+            signout
+        </button>
+        <span class="btn-separator"></span>
+        <button type="button" class="btn pull-right btn-link">
+            Hello, user
+        </button>
+    </div>
 <!-- end of navbar divider -->
 <!-- my listings view -->
 <div style='background-color: whitesmoke;'>
